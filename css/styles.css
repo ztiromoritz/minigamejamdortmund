@@ -12,3 +12,7 @@ h2,h3 {
 main {
     width: 652px;
 }
+
+hr {
+    border-top: 1px solid #e81c4f;
+}
