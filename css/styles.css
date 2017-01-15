@@ -16,3 +16,8 @@ main {
 hr {
     border-top: 1px solid #e81c4f;
 }
+
+.beta {
+    color: #ff0000;
+    font-weight: bold;
+}
