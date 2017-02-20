@@ -6,63 +6,129 @@
 	<meta charset="utf-8">
 	<title>Mini Game Jam Dortmund</title>
 	<meta name="description" content="Mini Game Jam Dortmund">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
 	<link rel="stylesheet" href="css/styles.css">
+	<script src="./js/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src="./js/jquery.scrollify.min.js"></script>
+	<script>
+		$(function() {
+			$.scrollify({
+				section: ".section",
+				scrollSpeed: 900
+			});
+			var n = 0;
+			$("nav ul").each(function() {
+				var i = n++;
+				$(this).click(function(e) {
+					e.preventDefault()
+					$.scrollify.move(i);
+				});
+			});
+		});
+	</script>
 </head>
 
 <body>
 	<header>
 		<!--<img src="img/logo.png" alt="logo" width="326">-->
 	</header>
+	<nav>
+		<ul>
+			<li id="linkGameJam">
+				<a href="#gameJam">Home</a>
+			</li>
+		</ul>
+		<ul>
+			<li id="linkGameJam">
+				<a href="#gameJam">Game Jam?</a>
+			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="#ablauf">Ablauf</a>
+			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="#fragen">Fragen</a>
+			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="#anreise">Anfahrt</a>
+			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="#kontakt">Kontakt</a>
+			</li>
+		</ul>
+
+
+	</nav>
 	<main>
-	<h1>Mini Game Jam Dortmund</h1>
-	<hr>
-	<p class="beta">
-			BETA - die hier gesammelten Informationen sind noch nicht verbindlich
-	</p>
-	<h2>Was ist ein Game Jam?</h2>
-	<p>
-		Bei einem Game Jam finden sich Menschen zusammen, um gemeinsam in kurzer Zeit
-		Computerspiele zu entwerfen.
-		Die Zeitspanne eines Jams variiert dabei von wenigen Stunden bis zu mehreren
-		Tagen oder Wochen.
-		Ein Game Jam kann sowohl als lokales Treffen stattfinden als auch Online abgehalten werden.
-	</p>
 
-	<p>
-		Ein Game Jam startet mit einer Themenfindungsphase.
-		Anschließend finden sich die Teilnehmenden zu Gruppen zusammen oder beschließen das
-		Thema alleine zu bearbeiten. Dabei werden die ersten Ideen ausgetauscht und ausprobiert.
-		Charaktere werden geskribbelt, Spielmechaniken diskutiert, Hintergrundgeschichten
-		aufgeschrieben, Hintergründe gepixelt, Sounds angespielt.
-		Stück für Stück entwickeln sich aus spontanen Einfällen im Laufe des Jams
-		kleine Computerspiele, Prototypen und Konzepte.
-  	</p>
+		<div class="section title_section">
+			<div>
+				<h1>Mini Game Jam</h1>
+				<h2>10. Juni 2017</h2>
+				<h2>Im Künstlerhaus in Dortmund</h2>
+				<br>
+				<br>
+				<br>
+				<img src="./img/people.png" id="people">
 
-  	<p>
-		Zum Abschluss stellen die Teilnehmenden ihre Ergebnisse einander vor,
-		holen sich Feedback an oder Stimmen über das beste Spiel ab.
-  	</p>
+				<p class="beta">
+					<br>
+					<br>
+					<br>
+					<br>
+					<br> BETA - die hier gesammelten Informationen sind noch nicht verbindlich
+				</p>
+			</div>
+		</div>
+		<div class="section">
+			<div>
 
-	<p>
-		Neben dem Thema, werden bei einem Game Jam häufig Spielregeln aufgestellt, wie z.B:
-		 <ul>
-			<li>
-				Die Spiele müssen mit nur zwei Tasten bedienbar sein.
-			</li>
-			<li>
-				Die Auflösung muss der des Game Boys entsprechen.
-			</li>
-			<li>
-				Es dürfen nur Bilder, Animationen, Musik und Texte verwendet werden, die im Zeitraum des Jams erstellt werden.
-			</li>
-		 </ul>
-	</p>
+				<a name="gameJam"></a>
+				<h2>Was ist ein Game Jam?</h2>
+				<p>
+					Bei einem Game Jam finden sich Menschen zusammen, um gemeinsam in kurzer Zeit Computerspiele zu entwerfen. Die Zeitspanne eines Jams variiert dabei von wenigen Stunden bis zu mehreren Tagen oder Wochen. Ein Game Jam kann sowohl als lokales Treffen stattfinden
+					als auch Online abgehalten werden.
+				</p>
 
-	<p>
-		Konstruktives Feedback, Lob und Spass beim Machen und Spielen sind die Hauptmotivation für einen Game Jam.
-	</p>
+				<p>
+					Ein Game Jam startet mit einer Themenfindungsphase. Anschließend finden sich die Teilnehmenden zu Gruppen zusammen oder beschließen das Thema alleine zu bearbeiten. Dabei werden die ersten Ideen ausgetauscht und ausprobiert. Charaktere werden geskribbelt,
+					Spielmechaniken diskutiert, Hintergrundgeschichten aufgeschrieben, Hintergründe gepixelt, Sounds angespielt. Stück für Stück entwickeln sich aus spontanen Einfällen im Laufe des Jams kleine Computerspiele, Prototypen und Konzepte.
+				</p>
 
-	<!--
+				<p>
+					Zum Abschluss stellen die Teilnehmenden ihre Ergebnisse einander vor, holen sich Feedback an oder Stimmen über das beste Spiel ab.
+				</p>
+
+				<p>
+					Neben dem Thema, werden bei einem Game Jam häufig Spielregeln aufgestellt, wie z.B:
+					<ul>
+						<li>
+							Die Spiele müssen mit nur zwei Tasten bedienbar sein.
+						</li>
+						<li>
+							Die Auflösung muss der des Game Boys entsprechen.
+						</li>
+						<li>
+							Es dürfen nur Bilder, Animationen, Musik und Texte verwendet werden, die im Zeitraum des Jams erstellt werden.
+						</li>
+					</ul>
+				</p>
+
+				<p>
+					Konstruktives Feedback, Lob und Spass beim Machen und Spielen sind die Hauptmotivation für einen Game Jam.
+				</p>
+				<img class="peop" src="./img/peop1.png">
+			</div>
+		</div>
+
+		<!--
 	<h2>Was bringt mir ein Game Jam?</h2>
 	<p>
 		Ein Game Jam bietet die Möglichkeit neue Dinge auszuprobieren. Ein Game Jam
@@ -79,59 +145,94 @@
 		Es spricht aber nichts trotzdem in dieser Form am Game Jam teilzunehmen.
 	</p>
 	-->
+		<div class="section">
+			<div>
+				<a name="ablauf"></a>
+				<br>
+				<h2>Was passiert beim Mini Game Jam Dortmund?</h2>
+				<p>
+					Der Mini Game Jam in Dortmund ist eine entspannte eintägige lokale Veranstaltung. Es stehen Zeit, Raum und ein paar Steckdosen zur Verfügung, um gemeinsam an Spielen zu arbeiten und sich auszutauschen. Wer den Game Jam dafür nutzt, um an einem Projekt
+					weiterzuarbeiten, ist genauso willkommen. Ein Präsentationsrunde schließt den Game Jam ab. Ein Wettbewerb mit Bewertung, Ranking oder Jury wird es nicht geben.
+				</p>
 
-	<h2>Was passiert beim Mini Game Jam Dortmund?</h2>
-	<p>
-		Der Mini Game Jam in Dortmund ist eine entspannte eintägige lokale Veranstaltung.
-		Es stehen Zeit, Raum und ein paar Steckdosen zur Verfügung, um gemeinsam an Spielen zu arbeiten und sich auszutauschen.
-		Wer den Game Jam dafür nutzt, um an einem Projekt weiterzuarbeiten, ist genauso willkommen.
-		Ein Präsentationsrunde schließt den Game Jam ab.
-		Ein Wettbewerb mit Bewertung, Ranking oder Jury wird es nicht geben.
-	</p>
+				<h2>Anmeldung</h2>
+				<p class="beta">
+					Meetup und Email. Folgt in Kürze.
+				</p>
+
+				<h2>Ablauf</h2>
+				<dl>
+					<dt>11 Uhr</dt>
+					<dd>Einlass, Kennen lernen, Themenauswahl, kurze Begrüssung</dd>
+					<dt>12 Uhr</dt>
+					<dd>Verkündung des Themas und Start des Jams </dd>
+					<dt>20 Uhr</dt>
+					<dd>Abschluss und Themenpräsentation</dd>
+					<dt>21 Uhr</dt>
+					<dd>Spielen, Spass haben, Kontakte knüpfen</dd>
+				</dl>
+
+				<img class="peop" src="./img/peop2.png">
+			</div>
+		</div>
+		<div class="section">
+			<div>
+				<a name="fragen"></a>
+				<h2>Wer kann mitmachen?</h2>
+				<p>
+					Der Game Jam richtet sich ausdrücklich nicht nur an ProgrammiererInnen und Menschen,
+					die professionell Spiele entwickeln. Auch alle Neugierigen, die noch nie an einem Computerspiel
+					gearbeitet haben, sind herzlich willkommen. Ein Computerspiel besteht
+					neben dem Programmcode auch aus Bilder, Musik, Tönen und Texten.
+					Jede und jeder mit Interesse und Lust an Computerspieleentwicklung, kann etwas beisteuern und weitergeben.
+				</p>
+
+				<h2>Was kostet das?</h2>
+				<p>
+					Der Mini Game Jam ist eine nicht kommerzielle Veranstaltung. Es werden keine Teilnamegebühren erhoben.
+					Alle Beteiligten werden eingeladen sich an den entstehenden Unkosten mit einer Spenden zu beteiligen.
+					Aber grundsätzlich soll für niemanden eine finanzielle Hürde entstehen.
+
+					Weiter Infos dazu gibt es vor Ort beim Start des Jams.
+				</p>
+
+				<h2>Welche Materialien und Geräte werden benötigt?</h2>
+				<p>
+					Die Teilnehmenden bringen in der Regel ihre eigenen Geräte, Laptops, Tablets, Instrumente und Skizzenblöcke zum Jam mit.
+					Ein kleiner Fundus an einfachen Leihgeräten, die für den Verlauf des Jams genutzt werden können, stehen auf
+					Anfrage gerne zur Verfügung.
+					Vorhanden sind Steckdosen, Tische, Stühle und eine Internetverbindung.
+					Außerdem ein Beamer für die Abschlusspräsentation.
+				</p>
+
+				<img class="peop" src="./img/peop3.png">
+			</div>
+		</div>
+		<div class="section">
+			<div>
+				<a name="anreise"></a>
+				<h2>Wo findet der Game Jam statt?</h2>
+				<p>
+					Künstlerhaus Dortmund<br> Sunderweg 1<br> 44147 Dortmund
+				</p>
+				<div class="overlay" onClick="style.pointerEvents='none'"></div>
+				<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=7.428603172302247%2C51.50513642494455%2C7.4643945693969735%2C51.52901107003804&amp;layer=mapnik&amp;marker=51.51707531179727%2C7.446498870849609"
+								style="border: 1px solid black"></iframe><br/><small><a href="http://www.openstreetmap.org/?mlat=51.5171&amp;mlon=7.4465#map=15/51.5171/7.4465">Größere Karte anzeigen</a></small>
 
 
-	<!--<h2>Wer kann mitmachen?</h2>-->
-	<p>
-		Der Game Jam richtet sich ausdrücklich nicht nur an ProgrammiererInnen und Menschen, die professionell Spiele entwickeln.
-		Auch alle Neugierigen, die noch nie an einem Computerspiel gearbeitet haben, sind herzlich willkommen.
-		Ein Computerspiel besteht neben dem Programmcode auch aus Bilder, Musik, Tönen und Texten.
-		Menschen mit künstlerischen Fertigkeiten sind daher ebenso eingeladen.
-		Jede und jeder mit Interesse und Lust an Computerspieleentwicklung, kann etwas beisteuern und weitergeben.
-	</p>
 
-	<!-- <h3>Was soll das kosten?</h3> -->
-	<p>
-		Der Mini Game Jam ist eine nicht kommerzielle Veranstaltung.
-		Es werden keine Teilnamegebühren erhoben.
-		Es wird versucht, einen möglichst günstigen Austragungsorten zu finden und die anfallenden Kosten in einem sehr kleinen Rahmen zu halten.
-		Alle Beteiligten werden eingeladen sich an den entstehenden Unkosten mit einer Spenden zu beteiligen.
-		Aber grundsätzlich soll für niemanden eine finanzielle Hürde entstehen.
-		Weiter Infos dazu gibt es, wenn es einen konkreten Termin und Austragungsort gibt.
-	</p>
+				<img class="peop" src="./img/peop4.png">
+			</div>
+		</div>
 
-	<!--<h2>Muss ich ein Laptop mitbringen?</h2>-->
-	<p>
-		Die Teilnehmenden bringen in der Regel ihre eigenen Geräte, Laptops, Tablets, Skizzenblöcke etc. zum Jam mit.
-		Ein kleiner Fundus an einfachen Leihgeräten, die für den Verlauf des Jams genutzt werden können, stehen auf Anfrage gerne zur Verfügung.
-		Gestellt werden Steckdosen, Tische, Stühle und eine hoffentlich solide Internetverbindung. Außerdem ein Beamer für die Abschlusspräsentation.
-	</p>
+		<div class="section">
+			<div>
+				<a name="kontakt"></a>
+				<h2>Kontakt</h2>
 
-
-	<h2>Ablauf</h2>
-	<dl>
-      <dt>11 Uhr</dt>
-        <dd>Einlass, Kennen lernen, Themenauswahl, kurze Begrüssung</dd>
-	  <dt>12 Uhr</dt>
-	    <dd>Verkündung des Themas und Start des Jams </dd>
-	  <dt>20 Uhr</dt>
-	    <dd>Abschluss und Themenpräsentation</dd>
-	  <dt>21 Uhr</dt>
-	    <dd>Spielen, Spass haben, Kontakte knüpfen</dd>
-    </dl>
-
-	<b>Ein Termin wird noch bekannt gegeben.</b>
-	<hr>
-
+				<img class="peop" src="./img/peop5.png">
+			</div>
+		</div>
 	</main>
 	<footer>
 
