@@ -4,12 +4,12 @@ html,body {
 }
 
 body {
-    font-family: monospace;/*'Raleway', sans-serif;*/
+    font-family: "Courier New", Courier, monospace;
     font-size: 18px;
 }
 
 h1,h2,h3 {
-    font-family: monospace;/*'Open Sans', sans-serif;*/
+    font-family: "Courier New", Courier, monospace;
 }
 
 h2,h3 {
@@ -73,7 +73,7 @@ hr {
     background-color:#FFF1E8;
 }
 
-.section div {
+.section > div {
     /*padding-left: 120px;
     */
     padding-top: 80px;
@@ -82,20 +82,20 @@ hr {
     width: 750px;
 }
 
-.section div .peop {
+.section > div .peop {
     position: absolute;
     bottom: 28px;
     right: 28px;
 }
 
-.section div h1,.section div h2{
+.section > div h1,.section > div h2{
     margin-bottom: 8px;
 }
-.section div p{
+.section > div p{
     margin-bottom: 8px;
 }
 
-.section div ul{
+.section > div ul{
     padding-left: 40px;
 }
 
@@ -113,8 +113,10 @@ hr {
       margin-top:-340px;  /* your iframe height */
 }
 
-#people {
-    /*position: absolute;
-    bottom: 80px;
-    left: 120px;*/
+.contact{
+    margin-top: 26px;
+}
+.contact >span:first-child {
+    display: inline-block;
+    width: 100px;
 }
