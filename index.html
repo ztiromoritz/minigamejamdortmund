@@ -1,29 +1,67 @@
 <!doctype html>
 
-<html lang="en">
+<html lang="de">
 
 <head>
 	<meta charset="utf-8">
 	<title>Mini Game Jam Dortmund</title>
-	<meta name="description" content="Mini Game Jam Dortmund">
+
+	<meta name="viewport" content="width=device-width">
+
+	<meta name="description" content="Entspannter eintägiger Game Jam im Künstlerhaus in Dortmund">
+
+	<meta property="og:title" content="Mini Game Jam Dortmund - Sa. 10.06.2017" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://ztiromoritz.github.io/minigamejamdortmund" />
+	<!-- TODO game-jam-do.de -->
+	<meta property="og:image" content="Hier kommt der Link zum Bild hin" />
+	<meta property="og:description" content="Entspannter eintägiger Game Jam im Künstlerhaus in Dortmund. Wir machen gemeinsam Computerspiele und digitale Kunst." />
+
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
 	<link rel="stylesheet" href="css/styles.css">
 	<script src="./js/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 	<script src="./js/jquery.scrollify.min.js"></script>
+	<!--<link rel="stylesheet" href="./css/slicknav.min.css" />
+	<script src="./js/jquery.slicknav.min.js"></script>-->
 	<script>
 		$(function() {
-			$.scrollify({
-				section: ".section",
-				scrollSpeed: 900
-			});
-			var n = 0;
-			$("nav ul").each(function() {
-				var i = n++;
-				$(this).click(function(e) {
-					e.preventDefault()
-					$.scrollify.move(i);
+			if (screen.width >= 720) {
+				$.scrollify({
+					section: ".section",
+					scrollSpeed: 900
 				});
-			});
+				var n = 0;
+				$("nav ul a").each(function() {
+					var i = n++;
+					$(this).click(function(e) {
+						e.preventDefault()
+						$.scrollify.move(i);
+					});
+				});
+			}
+
+
+
+			if(screen.width < 720){
+				var mobileMenuVisible=false;
+				$('#small_nav').click(function(){
+					if(mobileMenuVisible){
+						mobileMenuVisible=false;
+						$("#menu").hide();
+					}else{
+						mobileMenuVisible=true;
+						$("#menu").show();
+					}
+				});
+
+				$('#nav li').each(function(){
+					$(this).click(function(){
+						mobileMenuVisible=false;
+						$("#menu").hide();
+						return true;
+					});
+				});
+			}
 		});
 	</script>
 </head>
@@ -32,51 +70,31 @@
 	<header>
 		<!--<img src="img/logo.png" alt="logo" width="326">-->
 	</header>
-	<nav>
-		<ul>
-			<li id="linkGameJam">
-				<a href="#gameJam">Home</a>
-			</li>
+	<nav id="nav">
+		<div id="small_nav">
+			<div class="logo"></div>
+			<div class="button"><img src="./img/menu.svg" alt="mobile menu button"></div>
+		</div>
+		<ul id="menu">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#gameJam">Game Jam?</a></li>
+			<li><a href="#ablauf">Ablauf</a></li><li><a href="#fragen">Fragen</a></li>
+			<li><a href="#anreise">Anfahrt</a></li>
+			<li><a href="#kontakt">Kontakt</a></li>
 		</ul>
-		<ul>
-			<li id="linkGameJam">
-				<a href="#gameJam">Game Jam?</a>
-			</li>
-		</ul>
-		<ul>
-			<li>
-				<a href="#ablauf">Ablauf</a>
-			</li>
-		</ul>
-		<ul>
-			<li>
-				<a href="#fragen">Fragen</a>
-			</li>
-		</ul>
-		<ul>
-			<li>
-				<a href="#anreise">Anfahrt</a>
-			</li>
-		</ul>
-		<ul>
-			<li>
-				<a href="#kontakt">Kontakt</a>
-			</li>
-		</ul>
-
-
 	</nav>
 	<main>
 
 		<div class="section title_section">
+			<a name="home"></a>
 			<div>
-				<h1>Mini Game Jam</h1>
-				<h2>Im Künstlerhaus in Dortmund</h2>
-				<h2>10. Juni 2017</h2>
-				<br>
-				<br>
-				<br>
-				<img src="./img/people.png" id="people">
+				<div class="flyer">
+					<h1>MINI GAME JAM</h1>
+					<h2>Im Künstlerhaus in Dortmund</h2>
+					<h2>Am 10. Juni 2017</h2>
+					<br>
+					<img src="./img/people.png" id="people">
+				</div>
 
 				<p class="beta">
 					<br>
@@ -88,13 +106,16 @@
 			</div>
 		</div>
 		<div class="section">
+			<a name="gameJam"></a>
 			<div>
 
-				<a name="gameJam"></a>
 				<h2>Was ist ein Game Jam?</h2>
 				<p>
-					Bei einem Game Jam finden sich Menschen zusammen, um gemeinsam in kurzer Zeit Computerspiele zu entwerfen. Die Zeitspanne eines Jams variiert dabei von wenigen Stunden bis zu mehreren Tagen oder Wochen. Ein Game Jam kann sowohl als lokales Treffen stattfinden
-					als auch Online abgehalten werden.
+					Bei einem Game Jam finden sich Menschen zusammen, um gemeinsam in kurzer Zeit Computerspiele zu entwerfen.
+				</p>
+
+				<p>
+					Die Zeitspanne eines Jams variiert dabei von wenigen Stunden bis zu mehreren Tagen oder Wochen. Ein Game Jam kann als lokales Treffen stattfinden oder auch Online abgehalten werden.
 				</p>
 
 				<p>
@@ -106,6 +127,7 @@
 					Zum Abschluss stellen die Teilnehmenden ihre Ergebnisse einander vor, holen sich Feedback an oder Stimmen über das beste Spiel ab.
 				</p>
 
+				<h2>Regeln</h2>
 				<p>
 					Neben dem Thema, werden bei einem Game Jam häufig Spielregeln aufgestellt, wie z.B:
 					<ul>
@@ -124,6 +146,7 @@
 				<p>
 					Konstruktives Feedback, Lob und Spass beim Machen und Spielen sind die Hauptmotivation für einen Game Jam.
 				</p>
+
 				<img class="peop" src="./img/peop1.png">
 			</div>
 		</div>
@@ -146,18 +169,24 @@
 	</p>
 	-->
 		<div class="section">
+			<a name="ablauf"></a>
 			<div>
-				<a name="ablauf"></a>
-				<br>
+
+
 				<h2>Was passiert beim Mini Game Jam Dortmund?</h2>
+
 				<p>
-					Der Mini Game Jam in Dortmund ist eine entspannte eintägige lokale Veranstaltung. Es stehen Zeit, Raum und ein paar Steckdosen zur Verfügung, um gemeinsam an Spielen zu arbeiten und sich auszutauschen. Wer den Game Jam dafür nutzt, um an einem Projekt
+					Der Game Jam in Dortmund ist eine entspannte eintägige lokale Veranstaltung. Da wir mit 8-10 Stunden unter den üblichen 48-Stunden-Jams liegen, nennen wir das ganze "Mini Game Jam" nach dem Vorbild der <a href="http://berlinminijam.de">Berlin Mini Game Jams</a>.
+				</p>
+
+				<p>
+					Es stehen Zeit, Raum und ein paar Steckdosen zur Verfügung, um gemeinsam an Spielen zu arbeiten und sich auszutauschen. In der Regel werden die Spiele komplett im Rahmen des Jams von Grund auf erstellt. Wer den Game Jam aber dafür nutzt, um an einem Projekt
 					weiterzuarbeiten, ist genauso willkommen. Ein Präsentationsrunde schließt den Game Jam ab. Ein Wettbewerb mit Bewertung, Ranking oder Jury wird es nicht geben.
 				</p>
 
 				<h2>Anmeldung</h2>
 				<p class="beta">
-					Meetup und Email. Folgt in Kürze.
+					Meetup und Email. Folgt in Kürze. Themenvorschläge werden unter (themen@game-jam-do.de) gesammelt.
 				</p>
 
 				<h2>Ablauf</h2>
@@ -172,12 +201,15 @@
 					<dd>Spielen, Spass haben, Kontakte knüpfen</dd>
 				</dl>
 
+
 				<img class="peop" src="./img/peop2.png">
 			</div>
 		</div>
 		<div class="section">
+			<a name="fragen"></a>
 			<div>
-				<a name="fragen"></a>
+
+
 				<h2>Wer kann mitmachen?</h2>
 				<p>
 					Der Game Jam richtet sich ausdrücklich nicht nur an ProgrammiererInnen und Menschen, die professionell Spiele entwickeln. Auch alle Neugierigen, die noch nie an einem Computerspiel gearbeitet haben, sind herzlich willkommen. Ein Computerspiel besteht
@@ -194,14 +226,17 @@
 				<p>
 					Die Teilnehmenden bringen in der Regel ihre eigenen Geräte, Laptops, Tablets, Instrumente und Skizzenblöcke zum Jam mit. Ein kleiner Fundus an einfachen Leihgeräten, die für den Verlauf des Jams genutzt werden können, stehen auf Anfrage gerne zur Verfügung.
 					Vorhanden sind Steckdosen, Tische, Stühle und eine Internetverbindung. Außerdem ein Beamer für die Abschlusspräsentation.
+					<i>(Auf die privat mitgebrachten Dinge, müssen alle für sich aufpassen. Es kann kein Haftung übernommen werden.)</i>
 				</p>
-
-				<img class="peop" src="./img/peop3.png">
 			</div>
+
+			<img class="peop" src="./img/peop3.png">
+		</div>
 		</div>
 		<div class="section">
-			<div>
-				<a name="anreise"></a>
+			<a name="anreise"></a>
+			<div class="subsection">
+
 				<h2>Wo findet der Game Jam statt?</h2>
 				<p>
 					Künstlerhaus Dortmund<br> Sunderweg 1<br> 44147 Dortmund
@@ -217,8 +252,8 @@
 		</div>
 
 		<div class="section">
-			<div>
-				<a name="kontakt"></a>
+			<a name="kontakt"></a>
+			<div class="subsection">
 				<h2>Kontakt</h2>
 				<div class="contact">
 					<span>email:</span>
@@ -234,8 +269,6 @@
 					<span>meetup:</span>
 					<span><a href="">AuchNochNichtEingerichtet</a></span>
 				</div>
-
-
 				<img class="peop" src="./img/peop5.png">
 			</div>
 		</div>
