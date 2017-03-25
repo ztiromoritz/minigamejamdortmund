@@ -18,7 +18,8 @@ weiterzuarbeiten, ist genauso willkommen. Ein Präsentationsrunde schließt den 
 ## Ort
 Künstlerhaus Dortmund<br>
 Sunderweg 1<br>
-44147 Dortmund
+44147 Dortmund<br>
+<br>
 <a href="http://www.kuenstlerhaus-dortmund.de/" target="_blank">www.kuenstlerhaus-dortmund.de</a>
 
 ## Ablauf

@@ -12,10 +12,3 @@ classes: title_section
 	<br>
 	<img src="./img/people.png" id="people" alt="Schmuckbild Menschen und Maschinen machen Spiele">
 </div>
-<p class="beta">
-	<br>
-	<br>
-	<br>
-	<br>
-	<br> BETA - die hier gesammelten Informationen sind noch nicht verbindlich
-</p>
