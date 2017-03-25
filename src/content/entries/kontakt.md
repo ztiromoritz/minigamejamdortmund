@@ -9,7 +9,7 @@ footerImageAlt: Schmuckbild Computer Dude
 # Kontakt
 <div class="contact">
     <span>email:</span>
-    <span><a href="mailto:nochNichtEingerichtet@nix.com">nochNichtEingerichtet@nix.com</a></span>
+    <span><a href="mailto:info@game-jam-do.de">info@game-jam-do.de</a></span>
 </div>
 
 <div class="contact">
