@@ -1,6 +1,6 @@
 # game-jam-do.de
-Metal smith hompage do the game-jam-do.de hompage.
-It uses [metalsmith.io](https://metalsmith.io) as static side generator.
+game-jam-do.de hompage.
+It uses [metalsmith.io](http://www.metalsmith.io/) as static side generator.
 
 # Setup
 Fork this repository.
@@ -25,3 +25,12 @@ This generates a minified version of the page to the checked in docs directory.
 ```
 After this changes are available under
 %username%.github.io/minigamejamdortmund/
+
+# TODO
+ * basic robots.txt
+ * Create sprite from people.png to replace peopX.png files.
+ * Metalsmith dead link plugin
+ * Blog
+ * minify.js
+
+# DONE
