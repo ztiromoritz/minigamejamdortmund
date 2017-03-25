@@ -94,7 +94,7 @@ if (DEV_BUILD) {
         ]
     }));
 } else {
-    //ms = ms.use(htmlmin()).use(cleanCSS());
+    ms = ms.use(htmlmin()).use(cleanCSS());
 }
 
 
