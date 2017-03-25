@@ -9,6 +9,7 @@ var browsersync = require('metalsmith-browser-sync');
 var cleanCSS = require('metalsmith-clean-css');
 var writemetadata = require('metalsmith-writemetadata');
 var filter = require('metalsmith-filter');
+var drafts = require('metalsmith-drafts');
 var listFiles = require('./js/listFiles');
 var fixCollectionsOnRerun = require('./js/fixCollectionsOnRerun');
 
@@ -59,6 +60,7 @@ ms = ms.use(fixCollectionsOnRerun()).metadata({
     .source(dir.source)
     .destination(dir.dest)
     .clean(true)
+    .use(drafts())
     .use(collections({
         entries: {
             pattern: 'entries/*.md',

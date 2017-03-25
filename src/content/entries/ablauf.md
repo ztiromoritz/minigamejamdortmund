@@ -13,19 +13,20 @@ Es stehen Zeit, Raum und ein paar Steckdosen zur Verfügung, um gemeinsam an Spi
 weiterzuarbeiten, ist genauso willkommen. Ein Präsentationsrunde schließt den Game Jam ab. Ein Wettbewerb mit Bewertung, Ranking oder Jury wird es nicht geben.
 
 
-## Anmeldung
-<p class="beta">
-    Meetup und Email. Folgt in Kürze. Themenvorschläge werden unter (themen@game-jam-do.de) gesammelt.
-</p>
+
+
+## Ort
+Künstlerhaus Dortmund<br>
+Sunderweg 1<br>
+44147 Dortmund
+<a href="http://www.kuenstlerhaus-dortmund.de/" target="_blank">www.kuenstlerhaus-dortmund.de</a>
 
 ## Ablauf
-<dl>
-	<dt>11 Uhr</dt>
-	<dd>Einlass, Kennen lernen, Themenauswahl, kurze Begrüssung</dd>
-	<dt>12 Uhr</dt>
-	<dd>Verkündung des Themas und Start des Jams </dd>
-	<dt>20 Uhr</dt>
-	<dd>Abschluss und Themenpräsentation</dd>
-	<dt>21 Uhr</dt>
-	<dd>Spielen, Spass haben, Kontakte knüpfen</dd>
-</dl>
+11 Uhr - Kennen lernen und Themenauswahl <br>
+12 Uhr - Verkündung des Themas und Start des Jams <br>
+20 Uhr - Abschluss und Themenpräsentation <br>
+21 Uhr - Spielen, Spass haben, Kontakte knüpfen <br>
+
+
+## Anmeldung
+Wenn du teilnehmen möchtest oder Fragen hast: <a href="mailto:info@game-jam-do.de">info@game-jam-do.de</a>

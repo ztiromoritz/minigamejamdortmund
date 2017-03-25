@@ -2,6 +2,7 @@
 title: Anreise
 id: anreise
 prio: 6
+draft: true
 footerImage: ./img/peop4.png
 footerImageAlt: Schmuckbild Cosplay Darth Vader
 ---

@@ -2,6 +2,7 @@
 title: Kontakt
 id: kontakt
 prio: 6
+draft: true
 footerImage: ./img/peop5.png
 footerImageAlt: Schmuckbild Computer Dude
 ---
