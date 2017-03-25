@@ -1,97 +1,34 @@
 <!doctype html>
-
 <html lang="de">
-
 <head>
 	<meta charset="utf-8">
 	<title>Mini Game Jam Dortmund</title>
-
-	<meta name="viewport" content="width=device-width">
-
 	<meta name="description" content="Entspannter eintägiger Game Jam im Künstlerhaus in Dortmund">
+	<link rel="author" href="humans.txt" />
+
+	<link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+	<link rel="apple-touch-icon" sizes="57x57" href="icons/apple-touch-icon-57x57.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="icons/apple-touch-icon-72x72.png" />
+	<link rel="apple-touch-icon" sizes="76x76" href="icons/apple-touch-icon-76x76.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="icons/apple-touch-icon-114x114.png" />
+	<link rel="apple-touch-icon" sizes="120x120" href="icons/apple-touch-icon-120x120.png" />
+	<link rel="apple-touch-icon" sizes="144x144" href="icons/apple-touch-icon-144x144.png" />
+	<link rel="apple-touch-icon" sizes="152x152" href="icons/apple-touch-icon-152x152.png" />
+	<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon-180x180.png" />
 
 	<meta property="og:title" content="Mini Game Jam Dortmund - Sa. 10.06.2017" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://ztiromoritz.github.io/minigamejamdortmund" />
+	<meta property="og:locale" content="de_DE" />
 	<!-- TODO game-jam-do.de -->
+	<meta property="og:url" content="https://ztiromoritz.github.io/minigamejamdortmund" />
 	<meta property="og:image" content="https://ztiromoritz.github.io/minigamejamdortmund/img/twitterHeader.png" />
 	<meta property="og:description" content="Entspannter eintägiger Game Jam im Künstlerhaus in Dortmund. Wir machen gemeinsam Computerspiele und digitale Kunst." />
 
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
+	<meta name="viewport" content="width=device-width">
+
 	<link rel="stylesheet" href="css/styles.css">
-
-	<script>
-		function ready(fn) {
-			if (document.readyState != 'loading') {
-				fn();
-			} else {
-				document.addEventListener('DOMContentLoaded', fn);
-			}
-		}
-
-		if (screen.width >= 720) {
-			//avoid loading jquery on mobile
-			document.write('<script src="./js/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"><\/script>');
-			document.write('<script src="./js/jquery.scrollify.min.js"><\/script>');
-		}
-
-
-		ready(function() {
-			if (screen.width >= 720 && $) {
-				$.scrollify({
-					section: ".section",
-					scrollSpeed: 900
-				});
-				var n = 0;
-				$("nav ul a").each(function() {
-					var i = n++;
-					$(this).click(function(e) {
-						e.preventDefault()
-						$.scrollify.move(i);
-					});
-				});
-			} else {
-				var smallNavigation = function() {
-
-					var mobileMenuVisible = false;
-					var menu = document.getElementById('menu');
-
-					return {
-
-						clickMainButton: function() {
-
-							if (menu) {
-								if (mobileMenuVisible) {
-									mobileMenuVisible = false;
-									menu.style.display = 'none';
-								} else {
-									mobileMenuVisible = true;
-									menu.style.display = 'inline';
-								}
-							}
-						},
-						clickItem: function() {
-							mobileMenuVisible = false;
-							menu.style.display = 'none';
-							return true;
-						}
-					};
-				}();
-
-				console.log('here');
-				var smallnavButton = document.getElementById('smallnavButton');
-				smallnavButton.onclick = smallNavigation.clickMainButton;
-
-				var elements = document.querySelectorAll('#menu li');
-				Array.prototype.forEach.call(elements, function(el, i) {
-					el.onclick = smallNavigation.clickItem;
-				});
-			}
-
-
-
-		});
-	</script>
+	<script src="./js/script.js"></script>
 </head>
 
 <body>
@@ -110,6 +47,7 @@
 			<li><a href="#fragen">Fragen</a></li>
 			<li><a href="#anreise">Anfahrt</a></li>
 			<li><a href="#kontakt">Kontakt</a></li>
+			<li><a id="imprintLink" href="./impressum.html" rel="nofollow">Impressum</a></li>
 		</ul>
 	</nav>
 	<main>
@@ -124,7 +62,6 @@
 					<br>
 					<img src="./img/people.png" id="people">
 				</div>
-
 				<p class="beta">
 					<br>
 					<br>
@@ -180,28 +117,10 @@
 			</div>
 		</div>
 
-		<!--
-	<h2>Was bringt mir ein Game Jam?</h2>
-	<p>
-		Ein Game Jam bietet die Möglichkeit neue Dinge auszuprobieren. Ein Game Jam
-		liefer mir eine Deadline. Wenn ich schon Erfahrungen im Gamedesign habe,
-		bietet mir ein Game Jam die Möglichkeit andere Tätigkeitsfelder auszuprobieren
-		und in neue Rollen zu schlüpfen. Z.B. Ein Game Jam ist gut um neue Leute
-		kennen zu lernen. Teamstrukturen und arbeitsweise auszuprobieren. Ein Game
-		Jam bietet die Möglichkeit neue Techniken zu erproben. Sei es eine neue Game
-		Engine oder eine neue Art Stifte. Ein Game Jam bietet auch die Möglichkeit
-		in angenehmer Atmosphäre an einem größeren Spieleprojekt weiter zu arbeiten
-		und bei der Präsentation seinen aktuellen Fortschritt mit Interessiereten Menschen
-		zu Teilen und sich Feedback zu holen. Wenn der Game Jam einen Wettbewerb
-		beinhaltet Falle ich mit diesem Vorgehen zwar aus dem Rahmen.
-		Es spricht aber nichts trotzdem in dieser Form am Game Jam teilzunehmen.
-	</p>
-	-->
+
 		<div class="section">
 			<a name="ablauf"></a>
 			<div>
-
-
 				<h2>Was passiert beim Mini Game Jam Dortmund?</h2>
 
 				<p>
@@ -229,20 +148,17 @@
 					<dt>21 Uhr</dt>
 					<dd>Spielen, Spass haben, Kontakte knüpfen</dd>
 				</dl>
-
-
 				<img class="peop" src="./img/peop2.png">
 			</div>
 		</div>
 		<div class="section">
 			<a name="fragen"></a>
 			<div>
-
-
 				<h2>Wer kann mitmachen?</h2>
 				<p>
 					Der Game Jam richtet sich ausdrücklich nicht nur an ProgrammiererInnen und Menschen, die professionell Spiele entwickeln. Auch alle Neugierigen, die noch nie an einem Computerspiel gearbeitet haben, sind herzlich willkommen. Ein Computerspiel besteht
 					neben dem Programmcode auch aus Bilder, Musik, Tönen und Texten. Jede und jeder mit Interesse und Lust an Computerspieleentwicklung, kann etwas beisteuern und weitergeben.
+					<i>Allerdings ist die Teilnahme fürs erste nur für Menschen ab 18 Jahren.</i>
 				</p>
 
 				<h2>Was kostet das?</h2>
@@ -258,25 +174,15 @@
 					<i>(Auf die privat mitgebrachten Dinge, müssen alle für sich aufpassen. Es kann kein Haftung übernommen werden.)</i>
 				</p>
 			</div>
-
 			<img class="peop" src="./img/peop3.png">
-		</div>
 		</div>
 		<div class="section">
 			<a name="anreise"></a>
 			<div class="subsection">
-
 				<h2>Wo findet der Game Jam statt?</h2>
 				<p>
 					Künstlerhaus Dortmund<br> Sunderweg 1<br> 44147 Dortmund
 				</p>
-				<!--
-				<div class="overlay" onClick="style.pointerEvents='none'"></div>
-				<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=7.428603172302247%2C51.50513642494455%2C7.4643945693969735%2C51.52901107003804&amp;layer=mapnik&amp;marker=51.51707531179727%2C7.446498870849609"
-								style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=51.5171&amp;mlon=7.4465#map=15/51.5171/7.4465">Größere Karte anzeigen</a></small>
-
-
-				-->
 				<img class="peop" src="./img/peop4.png">
 			</div>
 		</div>
@@ -302,6 +208,7 @@
 				<img class="peop" src="./img/peop5.png">
 			</div>
 		</div>
+
 	</main>
 	<footer>
 

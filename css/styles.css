@@ -56,13 +56,20 @@ nav ul li {
     display: inline;
 }
 
-nav ul li a {
+nav ul li a
+{
     display: inline-block;
     width: 120px;
     text-decoration: none;
     color: #333333;
     padding: 0px;
     margin: 0px;
+}
+
+#smallnavButton a {
+    text-decoration: none;
+    line-height: 60px;
+    font-size: 30px;
 }
 
 nav a:hover {
