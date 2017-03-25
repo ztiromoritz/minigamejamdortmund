@@ -1,0 +1,4 @@
+ * https://www.sitepoint.com/create-static-site-metalsmith/
+ * http://www.metalsmith.io/
+ * i18n: 'metalsmith-multi-language'
+ * Markdown: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet

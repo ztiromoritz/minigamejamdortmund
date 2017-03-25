@@ -11,5 +11,6 @@
 # Technology
 
     CSS3, HTML5
+    metalsmith: http://www.metalsmith.io/
     jQuery: https://jquery.com/
     scrollify: https://projects.lukehaas.me/scrollify/

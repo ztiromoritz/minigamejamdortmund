@@ -1,0 +1,16 @@
+# Team
+
+    Author, Design, Graphics, Code: Moritz Rebbert
+    twitter: @ztiromoritz
+
+# Thanks
+
+    Favicon-Generator by: Webilicious® Web Design and Development Services
+    http://iconifier.net/
+
+# Technology
+
+    CSS3, HTML5
+    metalsmith: http://www.metalsmith.io/
+    jQuery: https://jquery.com/
+    scrollify: https://projects.lukehaas.me/scrollify/
