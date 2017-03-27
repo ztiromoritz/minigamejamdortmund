@@ -30,4 +30,4 @@ Sunderweg 1<br>
 
 
 ## Anmeldung
-Wenn du teilnehmen möchtest oder Fragen hast: <a href="mailto:info@game-jam-do.de">info@game-jam-do.de</a>
+Wenn du teilnehmen möchtest oder Fragen hast: <a href="mailto:info@game-jam-do.de">info@game-jam-do.de</a> oder via <a href="https://www.meetup.com/Game-Developers-Dortmund/">Meetup</a>

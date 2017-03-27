@@ -31,6 +31,7 @@ After this changes are available under
  * Create sprite from people.png to replace peopX.png files.
  * Metalsmith dead link plugin
  * Blog
- * minify.js
+ * minify javascript
+ * apple favicon quadratisch
 
 # DONE
