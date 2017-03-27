@@ -13,7 +13,7 @@ Die Informationen hier werden gesammelt und bereit gestellt von:
 Die oben genannten Kontaktdaten dienen ausschließlich der Kontaktaufnahme im Sinne der Impressumspflicht.
 
 Ich untersage hiermit ausdrücklich jede sonstige Verwendung, Speicherung oder Weiterverbreitung dieser Adresse
-ohne meine ausdrücklich Einwilligung.
+ohne meine Einwilligung.
 
 ## Datenschutzerklärung
 Der Webserver erfasst Zugriffe auf diese Seite in Form von Log-Dateien, die die IP-Adresse des aufrufenden Clients enthalten.
