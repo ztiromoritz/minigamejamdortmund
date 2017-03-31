@@ -7,7 +7,7 @@ TARGET_BRANCH="gh-pages"
 OUT="build"
 
 function doCompile {
-  ngp run build
+  npm run build
 }
 
 # Pull requests and commits to other branches shouldn't try to deploy, just build to verify
