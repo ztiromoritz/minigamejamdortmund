@@ -1,0 +1,9 @@
+0f3a5a820540_key
+
+language: generic # don't install any environment
+
+script: bash ./deploy.sh
+env:
+  global:
+  - ENCRYPTION_LABEL: "0f3a5a820540"
+  - COMMIT_AUTHOR_EMAIL: "travis-bot@game-jam-do.de"

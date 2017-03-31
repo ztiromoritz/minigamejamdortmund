@@ -44,7 +44,7 @@ const dir = {
     assets: './src/assets/',
     templates: './src/templates/',
     partials: './src/partials/',
-    dest: (DEV_BUILD) ? 'dev' : './docs/'
+    dest: (DEV_BUILD) ? 'dev' : './build/'
 };
 
 var ms = Metalsmith(dir.base)
