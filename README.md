@@ -25,7 +25,6 @@ To check the deployment locally run:
 This will build a minified version of the page to the build/ folder.
 
 # TODO
- * basic robots.txt
  * Create sprite from people.png to replace peopX.png files.
  * Metalsmith dead link plugin
  * Blog
@@ -33,3 +32,4 @@ This will build a minified version of the page to the build/ folder.
  * apple favicon quadratisch
 
 # DONE
+ * basic robots.txt
