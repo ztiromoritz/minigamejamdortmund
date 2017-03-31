@@ -1,8 +1,15 @@
-language: node_js # don't install any environment
+language: node_js
 node_js:
 - "6.10.1"
-script: bash ./deploy.sh
-env:
-  global:
-  - ENCRYPTION_LABEL: "0f3a5a820540"
-  - COMMIT_AUTHOR_EMAIL: "travis-bot@game-jam-do.de"
+script: npm run build
+#env:
+  #global:
+  #- ENCRYPTION_LABEL: "0f3a5a820540"
+  #- COMMIT_AUTHOR_EMAIL: "travis-bot@game-jam-do.de"
+deploy:
+  provider: pages
+  skip_cleanup: true
+  local_dir: build
+  github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
+  on:
+    branch: master
