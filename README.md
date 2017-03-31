@@ -1,6 +1,6 @@
 # game-jam-do.de
 game-jam-do.de hompage.
-It uses [metalsmith.io](http://www.metalsmith.io/) as static side generator.
+It uses [metalsmith.io](http://www.metalsmith.io/) as static site generator.
 
 # Setup
 Fork this repository.
