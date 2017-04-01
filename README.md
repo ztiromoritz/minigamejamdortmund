@@ -1,6 +1,6 @@
 # game-jam-do.de
 game-jam-do.de hompage.
-It uses [metalsmith.io](http://www.metalsmith.io/) as static side generator.
+It uses [metalsmith.io](http://www.metalsmith.io/) as static site generator.
 
 # Setup
 Fork this repository.
@@ -16,18 +16,15 @@ This starts a local dev server to u
     npm run dev
 ```
 ## Deployment of new content
-This generates a minified version of the page to the checked in docs directory.
+The page will be deployed to the gh-pages branch by the [travis pages provider](https://docs.travis-ci.com/user/deployment/pages/).
+So every changes on master will be reflected under [https://ztiromoritz.github.io/minigamejamdortmund/](https://ztiromoritz.github.io/minigamejamdortmund/)
+To check the deployment locally run:
 ```
     npm run build
-    git add docs
-    git commit -m "%What is new%"
-    git push
 ```
-After this changes are available under
-%username%.github.io/minigamejamdortmund/
+This will build a minified version of the page to the build/ folder.
 
 # TODO
- * basic robots.txt
  * Create sprite from people.png to replace peopX.png files.
  * Metalsmith dead link plugin
  * Blog
@@ -35,3 +32,4 @@ After this changes are available under
  * apple favicon quadratisch
 
 # DONE
+ * basic robots.txt
