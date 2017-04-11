@@ -1,0 +1,46 @@
+<!doctype html>
+
+<html lang="de">
+
+<head>
+	<meta charset="utf-8">
+	<title>Mini Game Jam Dortmund</title>
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="Entspannter eintägiger Game Jam im Künstlerhaus in Dortmund">
+	<link rel="stylesheet" href="css/flyer.css">
+	<script src="./js/script.js"></script>
+</head>
+
+<body>
+	<main>
+		<div class="a4">
+			<div>
+				<div class="flyer">
+					<div class="head">
+						<h1>{{this.title}}</h1>
+						<h2>{{this.location}}</h2>
+						<h2>{{this.dateLine}}</h2>
+						<img src="./img/people.png" id="people">
+						<h2>{{this.link}}</h2>
+						<h2>{{this.timeLine}}</h2>
+						<h2>{{this.addressLine}}</h2>
+					</div>
+					<div class="text">
+						<p>
+							{{{this.contents}}}
+						</p>
+					</div>
+					<div class="snippets">
+						{{#times 10}}
+
+						<div class="snippet">
+							<span>{{this.title}}</span>
+							<span>{{this.link}}</span>
+						</div>
+						{{/times}}
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+</body>

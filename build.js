@@ -91,6 +91,7 @@ if (DEV_BUILD) {
         server: dir.dest,
         files: [
             dir.source + "**/*.md",
+            dir.assets + "**/*",
             dir.templates + "**/*.html",
             dir.partials + "**/*.html"
         ]
