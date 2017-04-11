@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <title>{{this.title}}</title>
+
+    <link rel="stylesheet" href="/css/styles.css">
+    <meta name="viewport" content="width=device-width">
+
+    <meta property="og:title" content="{{this.title}}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="de_DE" />
+    <meta property="og:url" content="https://game-jam-do.de/{{this.path}}/" />
+    <meta property="og:image" content="https://game-jam-do.de/{{this.image}}" />
+    <meta property="og:description" content="{{this.description}}" />
+</head>
+
+<body>
+    {{> staticNav}}
+    <main class="blogEntry">
+        <article>
+            <h2>{{this.title}}</h2>
+            <div class="info">
+                <span class="date">{{moment this.date format="DD.MM.YYYY"}}</span>
+                <span class="author">{{this.author}}</span>
+            </div>
+            <div class="content">
+                {{{this.contents}}}
+            </div>
+        </article>
+    </main>
+</body>
+
+</html>

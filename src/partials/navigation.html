@@ -1,0 +1,15 @@
+<nav id="nav">
+    <div id="small_nav">
+        <div class="logo"></div>
+        <div id="smallnavButton" class="button">
+            <img src="./img/menu.svg" alt="mobile menu button">
+        </div>
+    </div>
+    <ul id="menu">
+        {{#each collections.entries}}
+        <li><a href="#{{this.id}}">{{this.title}}</a></li>
+        {{/each}}
+        <li><a id="imprintLink" href="./blog.html" rel="nofollow">Blog</a></li>
+        <li><a id="imprintLink" href="./impressum.html" rel="nofollow">Impressum</a></li>
+    </ul>
+</nav>
