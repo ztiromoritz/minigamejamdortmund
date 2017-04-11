@@ -1,5 +1,7 @@
 ---
+title: Impressum
 layout: imprint.html
+permalink: false
 ---
 ## Impressum
 Die Informationen hier werden gesammelt und bereit gestellt von:

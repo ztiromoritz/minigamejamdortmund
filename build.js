@@ -8,10 +8,14 @@ var htmlmin = require('metalsmith-html-minifier');
 var browsersync = require('metalsmith-browser-sync');
 var cleanCSS = require('metalsmith-clean-css');
 var writemetadata = require('metalsmith-writemetadata');
+var blc = require('metalsmith-broken-link-checker');
 var filter = require('metalsmith-filter');
 var drafts = require('metalsmith-drafts');
+var helpers = require('metalsmith-register-helpers');
+var permalinks = require('metalsmith-permalinks');
 var listFiles = require('./js/listFiles');
 var fixCollectionsOnRerun = require('./js/fixCollectionsOnRerun');
+
 
 var HELP = false;
 var DEV_BUILD = false;
@@ -65,17 +69,35 @@ ms = ms.use(fixCollectionsOnRerun()).metadata({
         entries: {
             pattern: 'entries/*.md',
             sortBy: 'prio'
+        },
+        articles: {
+            pattern: 'articles/*.md'
         }
     }))
     .use(markdown())
+    .use(listFiles())
+    .use(()=>{console.log("============");})
+    .use(permalinks({
+        relative : false,
+        linksets: [{
+            match: { collection: 'articles' },
+            pattern: 'blog/:title'
+        }]
+    }))
+    .use(listFiles())
+    .use(helpers({
+        "directory": "js/helpers"
+    }))
     .use(layouts({
-        pattern: ["*.html", "!entries/*.html"],
+        pattern: ["*.html", "blog/**","!entries/*.html"],
         engine: 'handlebars',
         directory: dir.templates,
         partials: dir.partials,
         default: 'page.html'
     }))
-    .use(filter(["*.html", "!entries/*.html"])) //Entries no longer needed as single files. There content shoud be included in index.html
+    .use(filter(["*.html","blog/**", "!entries/*.html"])) //Entries no longer needed as single files. There content shoud be included in index.html
+    .use(()=>{console.log("============");})
+    .use(listFiles())
     .use(assets({
         source: dir.assets,
         destination: './'
@@ -90,6 +112,7 @@ if (DEV_BUILD) {
     ms = ms.use(browsersync({
         server: dir.dest,
         files: [
+            dir.assets + "**/*",
             dir.source + "**/*.md",
             dir.assets + "**/*",
             dir.templates + "**/*.html",
@@ -100,6 +123,11 @@ if (DEV_BUILD) {
     ms = ms.use(htmlmin()).use(cleanCSS());
 }
 
+
+//should fail the  build in production
+ms = ms.use(blc({
+    warn: DEV_BUILD
+}));
 
 ms.build(function(err) {
     if (err) throw err;

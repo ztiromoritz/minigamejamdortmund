@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <title>Mini Game Jam Dortmund - Blog</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+    {{> staticNav}}
+    <main class="blog">
+        {{#each collections.articles}}
+        <article>
+            <h2><a href="{{this.path}}/">{{this.title}}</a></h2>
+            <div class="info">
+                <span class="date">{{moment this.date format="DD.MM.YYYY"}}</span>
+                <span class="author">{{this.author}}</span>
+            </div>
+            <div class="content">
+                {{{this.contents}}}
+            </div>
+        </article>
+        {{/each}}
+    </main>
+
+</body>
+
+</html>

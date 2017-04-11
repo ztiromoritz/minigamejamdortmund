@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html, body {
@@ -37,6 +39,7 @@ nav {
     margin: 0;
     padding: 0;
     position: fixed;
+    top: 0;
     width: 100%;
     height: 60px;
     background-color: #ffffff;
@@ -56,8 +59,7 @@ nav ul li {
     display: inline;
 }
 
-nav ul li a
-{
+nav ul li a {
     display: inline-block;
     width: 120px;
     text-decoration: none;
@@ -79,6 +81,30 @@ nav a:hover {
 main {
     width: 100%;
 }
+
+main.blog, main.blogEntry {
+    margin-top: 60px;
+}
+
+
+
+.blog article, .blogEntry article {
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+    width: 750px;
+}
+
+article .date,
+article .author {
+    color: #aaaaaa;
+}
+
+article .info {
+    margin-bottom: 10px;
+}
+
 
 hr {
     border-top: 1px solid #e81c4f;
@@ -155,15 +181,14 @@ hr {
         bottom: 28px;
         right: 28px;
     }
-
-    #small_nav{
+    #small_nav {
         display: none;
     }
 }
 
 @media screen and (max-width: 720px) and (min-width: 0px) {
     /* #menu is the original menu */
-    #nav{
+    #nav {
         top: 0;
         left: 0;
         height: 60px;
@@ -173,30 +198,23 @@ hr {
         background-color: #FFF1E8;
         border-bottom: none;
     }
-
     #small_nav {
         width: 100%;
         height: 60px;
     }
-
-    #small_nav .logo{
-
-    }
-
+    #small_nav .logo {}
     #small_nav .button {
         height: 60px;
         width: 60px;
         position: absolute;
-        left:50%;
+        left: 50%;
         margin-left: -30px;
         top: 0;
     }
-
     nav {
         height: 100px;
     }
-
-    nav ul{
+    nav ul {
         padding: 0px;
         margin: 0px;
         border: 1px solid #aaa;
@@ -210,30 +228,25 @@ hr {
         width: 100%;
         line-height: 60px;
     }
-
-    nav li:hover{
+    nav li:hover {
         background-color: #000;
     }
-
     nav a:hover {
         text-decoration: underline;
     }
-
     #menu {
-        display:none;
+        display: none;
         position: fixed;
         width: 100%;
         top: 60px;
         left: 0;
         background: #fff;
     }
-
     img.peop {
         /*position: relative;*/
         display: block;
         margin: auto;
     }
-
     .section .flyer h1 {
         padding-top: 60px;
     }
@@ -253,12 +266,9 @@ hr {
         margin-bottom: 39px;
         display: block;
     }
-
     #people {
         width: 100%;
     }
-
-
     p, dt, dd, ul, li {
         font-size: 20px;
     }

@@ -26,7 +26,6 @@ This will build a minified version of the page to the build/ folder.
 
 # TODO
  * Create sprite from people.png to replace peopX.png files.
- * Metalsmith dead link plugin
  * Blog
  * minify javascript
  * apple favicon quadratisch

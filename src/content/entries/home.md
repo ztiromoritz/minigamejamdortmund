@@ -11,4 +11,10 @@ classes: title_section
 	<h2>Am 10. Juni 2017</h2>
 	<br>
 	<img src="./img/people.png" id="people" alt="Schmuckbild Menschen und Maschinen machen Spiele">
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h1>↓</h1>
 </div>
