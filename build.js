@@ -89,13 +89,13 @@ ms = ms.use(fixCollectionsOnRerun()).metadata({
         "directory": "js/helpers"
     }))
     .use(layouts({
-        pattern: ["*.html", "blog/**","!entries/*.html"],
+        pattern: ["*.html", "blog/**","flyer/**","!entries/*.html"],
         engine: 'handlebars',
         directory: dir.templates,
         partials: dir.partials,
         default: 'page.html'
     }))
-    .use(filter(["*.html","blog/**", "!entries/*.html"])) //Entries no longer needed as single files. There content shoud be included in index.html
+    .use(filter(["*.html","blog/**","flyer/**", "!entries/*.html"])) //Entries no longer needed as single files. There content shoud be included in index.html
     .use(()=>{console.log("============");})
     .use(listFiles())
     .use(assets({

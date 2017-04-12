@@ -7,8 +7,7 @@
 	<title>Mini Game Jam Dortmund</title>
 	<meta name="viewport" content="width=device-width">
 	<meta name="description" content="Entspannter eintägiger Game Jam im Künstlerhaus in Dortmund">
-	<link rel="stylesheet" href="css/flyer.css">
-	<script src="./js/script.js"></script>
+	<link rel="stylesheet" href="/css/flyer.css">
 </head>
 
 <body>
@@ -20,25 +19,28 @@
 						<h1>{{this.title}}</h1>
 						<h2>{{this.location}}</h2>
 						<h2>{{this.dateLine}}</h2>
-						<img src="./img/people.png" id="people">
-						<h2>{{this.link}}</h2>
-						<h2>{{this.timeLine}}</h2>
-						<h2>{{this.addressLine}}</h2>
+						<img src="/img/people.png" id="people">
+						<h3>{{this.link}}</h3>
+						<h3>{{this.timeLine}}, {{this.addressLine}}</h3>
+
 					</div>
 					<div class="text">
 						<p>
 							{{{this.contents}}}
 						</p>
 					</div>
+					{{#if this.snippets}}
 					<div class="snippets">
 						{{#times 10}}
-
 						<div class="snippet">
-							<span>{{this.title}}</span>
-							<span>{{this.link}}</span>
+							<div>
+								<b>{{@root.title}}</b><br>
+								<b>{{@root.linkSmall}}</b>
+							</div>
 						</div>
 						{{/times}}
 					</div>
+					{{/if}}
 				</div>
 			</div>
 		</div>
