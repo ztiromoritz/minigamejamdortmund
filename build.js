@@ -15,6 +15,7 @@ var helpers = require('metalsmith-register-helpers');
 var permalinks = require('metalsmith-permalinks');
 var listFiles = require('./js/listFiles');
 var fixCollectionsOnRerun = require('./js/fixCollectionsOnRerun');
+var copyAndEdit = require('./js/copyAndEdit.js');
 
 
 var HELP = false;
@@ -65,6 +66,21 @@ ms = ms.use(fixCollectionsOnRerun()).metadata({
     .destination(dir.dest)
     .clean(true)
     .use(drafts())
+    .use(listFiles())
+    .use(copyAndEdit({
+        pattern: '**/flyer.md',
+        extension: 'NoSnip.md',
+        edit: function(filedata) {
+            filedata.snippets = false;
+        },
+    }))
+    .use(() => {
+        console.log("============");
+    })
+    .use(listFiles())
+    .use(() => {
+        console.log("============");
+    })
     .use(collections({
         entries: {
             pattern: 'entries/*.md',
@@ -74,29 +90,31 @@ ms = ms.use(fixCollectionsOnRerun()).metadata({
             pattern: 'articles/*.md'
         }
     }))
-    .use(markdown())
     .use(listFiles())
-    .use(()=>{console.log("============");})
+    .use(markdown())
     .use(permalinks({
-        relative : false,
+        relative: false,
         linksets: [{
-            match: { collection: 'articles' },
+            match: {
+                collection: 'articles'
+            },
             pattern: 'blog/:title'
         }]
     }))
-    .use(listFiles())
     .use(helpers({
         "directory": "js/helpers"
     }))
     .use(layouts({
-        pattern: ["*.html", "blog/**","flyer/**","!entries/*.html"],
+        pattern: ["*.html", "blog/**", "flyer/**", "!entries/*.html"],
         engine: 'handlebars',
         directory: dir.templates,
         partials: dir.partials,
         default: 'page.html'
     }))
-    .use(filter(["*.html","blog/**","flyer/**", "!entries/*.html"])) //Entries no longer needed as single files. There content shoud be included in index.html
-    .use(()=>{console.log("============");})
+    .use(filter(["*.html", "blog/**", "flyer/**", "!entries/*.html"])) //Entries no longer needed as single files. There content shoud be included in index.html
+    .use(() => {
+        console.log("============");
+    })
     .use(listFiles())
     .use(assets({
         source: dir.assets,
