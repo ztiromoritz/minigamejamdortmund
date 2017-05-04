@@ -45,8 +45,20 @@ h3 {
     position: relative;
 }
 
+.a5 {
+    display: block;
+    margin: 0 auto;
+    width: 210mm;
+    height: 148.5mm;
+    background-color: #FFF1E8;
+    position: relative;
+}
+
 @media print {
     .a4 {
+        background-color: #FFFFFF;
+    }
+    .a5 {
         background-color: #FFFFFF;
     }
 }

@@ -74,6 +74,16 @@ ms = ms.use(fixCollectionsOnRerun()).metadata({
             filedata.snippets = false;
         },
     }))
+    .use(copyAndEdit({
+        pattern: '**/flyer.md',
+        extension: 'NoSnipNoText.md',
+        edit: function(filedata) {
+            filedata.snippets = false;
+            filedata.text = false;
+            filedata.showDate = false;
+            filedata.format = 'a5';
+        },
+    }))
     .use(() => {
         console.log("============");
     })

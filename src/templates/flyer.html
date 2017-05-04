@@ -12,7 +12,7 @@
 
 <body>
 	<main>
-		<div class="a4">
+		<div class="{{this.format}}">
 			<div>
 				<div class="flyer">
 					<div class="head">
@@ -21,14 +21,17 @@
 						<h2>{{this.dateLine}}</h2>
 						<img src="/img/people.png" id="people">
 						<h3>{{this.link}}</h3>
+						{{#if this.showDate}}
 						<h3>{{this.timeLine}}, {{this.addressLine}}</h3>
-
+						{{/if}}
 					</div>
+					{{#if this.text}}
 					<div class="text">
 						<p>
 							{{{this.contents}}}
 						</p>
 					</div>
+					{{/if}}
 					{{#if this.snippets}}
 					<div class="snippets">
 						{{#times 10}}

@@ -8,6 +8,9 @@ addressLine: 'Sunderweg 1, Dortmund'
 link: 'https://game-jam-do.de'
 linkSmall: game-jam-do.de
 snippets: true
+text: true
+showDate: true
+format: a4
 ---
 
 Bei einem Game Jam werden zu einem Thema gemeinsam Computerspiele und interaktive Kunst entwickelt. Er bietet Raum und Zeit für Brainstorming und Prototypenentwicklung.<br><br>
