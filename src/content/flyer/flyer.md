@@ -10,6 +10,8 @@ linkSmall: game-jam-do.de
 snippets: true
 text: true
 showDate: true
+showLocation: true
+showDateline: true
 format: a4
 ---
 

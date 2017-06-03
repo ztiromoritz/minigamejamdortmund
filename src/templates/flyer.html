@@ -17,10 +17,10 @@
 				<div class="flyer">
 					<div class="head">
 						<h1>{{this.title}}</h1>
-						<h2>{{this.location}}</h2>
-						<h2>{{this.dateLine}}</h2>
+						{{#if this.showLocation}}<h2>{{this.location}}</h2>	{{/if}}
+						{{#if this.showDateline}}<h2>{{this.dateLine}}</h2> {{/if}}
 						<img src="/img/people.png" id="people">
-						<h3>{{this.link}}</h3>
+						{{#if this.showDateline}}<h3>{{this.link}}</h3>{{/if}}
 						{{#if this.showDate}}
 						<h3>{{this.timeLine}}, {{this.addressLine}}</h3>
 						{{/if}}

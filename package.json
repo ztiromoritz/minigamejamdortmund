@@ -1,4 +1,4 @@
-{
+    {
   "name": "game-jam-do.de",
   "version": "1.0.0",
   "description": "Metalsmith project for game-jam-do.de hompage",
@@ -14,6 +14,7 @@
   "devDependencies": {
     "handlebars": "^4.0.6",
     "helper-moment": "^0.2.0",
+    "lodash": "^4.17.4",
     "metalsmith": "^2.3.0",
     "metalsmith-assets": "^0.1.0",
     "metalsmith-broken-link-checker": "^0.1.11",

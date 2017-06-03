@@ -1,4 +1,4 @@
 ---
 layout: page.html
-locale: de
+locale: en
 ---

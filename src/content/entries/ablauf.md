@@ -2,7 +2,7 @@
 title: Ablauf
 id: ablauf
 prio: 2
-footerImage: ./img/peop2.png
+footerImage: /img/peop2.png
 footerImageAlt: Schmuckbild Robot
 ---
 ## Was passiert beim Mini Game Jam Dortmund?</h2>

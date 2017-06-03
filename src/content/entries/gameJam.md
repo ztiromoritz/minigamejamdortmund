@@ -2,7 +2,7 @@
 title: Game Jam?
 id: gameJam
 prio: 1
-footerImage: ./img/peop1.png
+footerImage: /img/peop1.png
 footerImageAlt: Schmuckbild Zusammenarbeit
 ---
 

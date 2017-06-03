@@ -14,8 +14,10 @@ var drafts = require('metalsmith-drafts');
 var helpers = require('metalsmith-register-helpers');
 var permalinks = require('metalsmith-permalinks');
 var listFiles = require('./js/listFiles');
+var listCollections = require('./js/listCollections');
 var fixCollectionsOnRerun = require('./js/fixCollectionsOnRerun');
 var copyAndEdit = require('./js/copyAndEdit.js');
+var _ = require('lodash');
 
 
 var HELP = false;
@@ -52,9 +54,49 @@ const dir = {
     dest: (DEV_BUILD) ? 'dev' : './build/'
 };
 
+const LOCALES = ['de', 'en'];
+
+const prependLocalePattern = _.curry(function(locale, pattern) {
+    if (locale.length == 0 || locale === 'de') {
+        return pattern;
+    } else if (pattern.startsWith("!")) {
+        return '!' + locale + '/' + pattern.substr(1);
+    } else {
+        return locale + '/' + pattern;
+    }
+});
+
+const localizePattern = function(pattern) {
+    return _(LOCALES)
+        .map((locale) => {
+            return _.map(pattern, prependLocalePattern(locale))
+        })
+        .reduce((sum, a) => {
+            return sum.concat(a)
+        }, []);
+};
+
+const localizeCollections = function(collections) {
+    //const locale = "en";
+    return _(LOCALES)
+        .map((locale) => {
+            return _(collections)
+                .toPairs()
+                .map(([key, value]) => {
+                    return [key + '_' + locale, _.clone(value)];
+                })
+                .map(([key, value]) => {
+                    value.pattern = prependLocalePattern(locale, value.pattern);
+                    return [key, value];
+                })
+                .fromPairs()
+                .value();
+        })
+        .reduce((sum,a) => {return _.assign(sum,a);}, {});
+};
+
+
 var ms = Metalsmith(dir.base)
-
-
 ms = ms.use(fixCollectionsOnRerun()).metadata({
         sitename: "Mini Game Jam Dortmund",
         siteurl: "https://game-jam-do.de",
@@ -72,6 +114,10 @@ ms = ms.use(fixCollectionsOnRerun()).metadata({
         extension: 'NoSnip.md',
         edit: function(filedata) {
             filedata.snippets = false;
+            filedata.showDate = true;
+            filedata.showLocation = true;
+            filedata.showDateline = true;
+            filedata.showLink = true;
         },
     }))
     .use(copyAndEdit({
@@ -81,17 +127,38 @@ ms = ms.use(fixCollectionsOnRerun()).metadata({
             filedata.snippets = false;
             filedata.text = false;
             filedata.showDate = false;
+            filedata.showLocation = true;
+            filedata.showDateline = true;
+            filedata.showLink = true;
             filedata.format = 'a5';
         },
     }))
-    .use(() => {
-        console.log("============");
-    })
-    .use(listFiles())
-    .use(() => {
-        console.log("============");
-    })
-    .use(collections({
+    .use(copyAndEdit({
+        pattern: '**/flyer.md',
+        extension: 'Sign.md',
+        edit: function(filedata) {
+            filedata.snippets = false;
+            filedata.text = false;
+            filedata.showDate = false;
+            filedata.showLocation = false;
+            filedata.showDateline = false;
+            filedata.showLink = false;
+            //filedata.format = 'a5';
+        },
+    }))
+    .use(copyAndEdit({
+        //TODO: map function
+        pattern: "locales/en/**",
+        move: true,
+        edit: function(filedata) {
+            filedata.locale = 'en';
+        },
+        transform: function(filename) {
+            return filename.replace(/^locales\//, '');
+        }
+    }))
+    .use(collections(localizeCollections(
+        {
         entries: {
             pattern: 'entries/*.md',
             sortBy: 'prio'
@@ -99,8 +166,9 @@ ms = ms.use(fixCollectionsOnRerun()).metadata({
         articles: {
             pattern: 'articles/*.md'
         }
-    }))
-    .use(listFiles())
+    })))
+    //.use(listFiles())
+    //.use(listCollections())
     .use(markdown())
     .use(permalinks({
         relative: false,
@@ -115,17 +183,13 @@ ms = ms.use(fixCollectionsOnRerun()).metadata({
         "directory": "js/helpers"
     }))
     .use(layouts({
-        pattern: ["*.html", "blog/**", "flyer/**", "!entries/*.html"],
+        pattern: localizePattern(["*.html", "blog/**", "flyer/**", "!entries/*.html"]),
         engine: 'handlebars',
         directory: dir.templates,
         partials: dir.partials,
         default: 'page.html'
     }))
-    .use(filter(["*.html", "blog/**", "flyer/**", "!entries/*.html"])) //Entries no longer needed as single files. There content shoud be included in index.html
-    .use(() => {
-        console.log("============");
-    })
-    .use(listFiles())
+    .use(filter(localizePattern(["*.html", "blog/**", "flyer/**", "!entries/*.html"]))) //Entries no longer needed as single files. There content shoud be included in index.html
     .use(assets({
         source: dir.assets,
         destination: './'

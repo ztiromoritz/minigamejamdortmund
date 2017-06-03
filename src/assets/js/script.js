@@ -8,8 +8,8 @@ function ready(fn) {
 
 if (screen.width >= 720) {
     //avoid loading jquery on mobile
-    document.write('<script src="./js/jquery-2.2.4.min.js"><\/script>');
-    document.write('<script src="./js/jquery.scrollify.min.js"><\/script>');
+    document.write('<script src="/js/jquery-2.2.4.min.js"><\/script>');
+    document.write('<script src="/js/jquery.scrollify.min.js"><\/script>');
 }
 
 ready(function() {

@@ -2,7 +2,7 @@
 title: Fragen
 id: fragen
 prio: 3
-footerImage: ./img/peop3.png
+footerImage: /img/peop3.png
 footerImageAlt: Schmuckbild Malen und Musik
 ---
 ## Wer kann mitmachen?

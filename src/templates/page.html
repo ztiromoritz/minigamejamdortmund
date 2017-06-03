@@ -8,7 +8,7 @@
 <body>
     {{> navigation}}
     <main>
-        {{#each collections.entries}}
+        {{#each (getCollection 'entries')}}
             {{>entry}}
         {{/each}}
     </main>
