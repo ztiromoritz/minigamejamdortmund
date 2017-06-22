@@ -20,7 +20,7 @@ ready(function() {
         });
         var n = 0;
         $("nav ul a").each(function() {
-            if(this.id !== 'imprintLink'){
+            if(this.id !== 'imprintLink' && this.id !== 'blogLink'){
                 var i = n++;
                 $(this).click(function(e) {
                     e.preventDefault()

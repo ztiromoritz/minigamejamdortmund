@@ -12,12 +12,12 @@
 <body>
     {{> staticNav}}
     <main class="blog">
-        {{#each collections.articles}}
+        {{#each (getCollection 'articles')}}
         <article>
             <h2><a href="{{this.path}}/">{{this.title}}</a></h2>
             <div class="info">
                 <span class="date">{{moment this.date format="DD.MM.YYYY"}}</span>
-                <span class="author">{{this.author}}</span>
+                <!--<span class="author">{{this.author}}</span>-->
             </div>
             <div class="content">
                 {{{this.contents}}}

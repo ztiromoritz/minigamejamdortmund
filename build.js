@@ -168,7 +168,7 @@ ms = ms.use(fixCollectionsOnRerun()).metadata({
         }
     })))
     //.use(listFiles())
-    //.use(listCollections())
+    .use(listCollections())
     .use(markdown())
     .use(permalinks({
         relative: false,
@@ -183,13 +183,14 @@ ms = ms.use(fixCollectionsOnRerun()).metadata({
         "directory": "js/helpers"
     }))
     .use(layouts({
-        pattern: localizePattern(["*.html", "blog/**", "flyer/**", "!entries/*.html"]),
+        pattern: localizePattern(["*.html", "articles/**","blog/**", "flyer/**", "!entries/*.html"]),
         engine: 'handlebars',
         directory: dir.templates,
         partials: dir.partials,
         default: 'page.html'
     }))
-    .use(filter(localizePattern(["*.html", "blog/**", "flyer/**", "!entries/*.html"]))) //Entries no longer needed as single files. There content shoud be included in index.html
+    .use(listFiles())
+    .use(filter(localizePattern(["*.html", "articles/**", "blog/**", "flyer/**", "!entries/*.html"]))) //Entries no longer needed as single files. There content shoud be included in index.html
     .use(assets({
         source: dir.assets,
         destination: './'

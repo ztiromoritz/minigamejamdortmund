@@ -8,6 +8,10 @@
     Favicon-Generator by: Webilicious® Web Design and Development Services
     http://iconifier.net/
     Proofreading by: https://github.com/saba0815
+    Translations:
+     * pl: Magdalena Bork
+     * ru: Denis Ergashbaev
+     * tr: Nedim Aydogmus
 
 # Technology
 

@@ -1,9 +1,15 @@
 <nav id="nav">
     <div id="small_nav">
         <div class="logo"></div>
-        <div id="smallnavButton" class="button"><a href="./index.html">Home</a></div>
+        <div id="smallnavButton" class="button">
+            <img src="/img/menu.svg" alt="mobile menu button">
+        </div>
     </div>
     <ul id="menu">
-        <li><a href="./index.html">Home</a></li>
+        {{#each (getCollection 'entries')}}
+        <li><a href="/index.html#{{add @index 1}}">{{this.title}}</a></li>
+        {{/each}}
+        <li><a class="staticLink" id="blogLink" href="/blog.html" rel="nofollow">Archiv</a></li>
+        <li><a class="staticLink" id="imprintLink" href="/impressum.html" rel="nofollow">Impressum</a></li>
     </ul>
 </nav>

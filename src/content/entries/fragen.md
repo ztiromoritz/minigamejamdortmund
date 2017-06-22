@@ -23,3 +23,5 @@ Hürde entstehen. Weiter Infos dazu gibt es vor Ort beim Start des Jams.
 Die Teilnehmenden bringen in der Regel ihre eigenen Geräte, Laptops, Tablets, Instrumente und Skizzenblöcke zum Jam mit. Ein kleiner Fundus an einfachen Leihgeräten, die für den Verlauf des Jams genutzt werden können, stehen auf Anfrage gerne zur Verfügung.
 Vorhanden sind Steckdosen, Tische, Stühle und eine Internetverbindung. Außerdem ein Beamer für die Abschlusspräsentation.
 *(Auf die privat mitgebrachten Dinge, müssen alle für sich aufpassen. Es kann kein Haftung übernommen werden.)*
+
+Bestimmte Software oder Techniken werden nicht vorgegeben. Hier gibt es eine Liste von Programmen, die gut für Game Jams geeignet sind: [http://ludumdare.com/compo/tools/](http://ludumdare.com/compo/tools/)

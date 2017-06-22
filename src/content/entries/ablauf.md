@@ -5,14 +5,18 @@ prio: 2
 footerImage: /img/peop2.png
 footerImageAlt: Schmuckbild Robot
 ---
-## Was passiert beim Mini Game Jam Dortmund?</h2>
+## Ablauf
 
 Der Game Jam in Dortmund ist eine entspannte eintägige lokale Veranstaltung. Da wir mit 8-10 Stunden unter den üblichen 48-Stunden-Jams liegen, nennen wir das ganze "Mini Game Jam" nach dem Vorbild der <a href="http://berlinminijam.de">Berlin Mini Game Jams</a>.
 
 Es stehen Zeit, Raum und ein paar Steckdosen zur Verfügung, um gemeinsam an Spielen zu arbeiten und sich auszutauschen. In der Regel werden die Spiele komplett im Rahmen des Jams von Grund auf erstellt. Wer den Game Jam aber dafür nutzt, um an einem Projekt
 weiterzuarbeiten, ist genauso willkommen. Ein Präsentationsrunde schließt den Game Jam ab. Ein Wettbewerb mit Bewertung, Ranking oder Jury wird es nicht geben.
 
-
+<br>
+11 Uhr - Kennen lernen und Themenauswahl <br>
+12 Uhr - Verkündung des Themas und Start des Jams <br>
+20 Uhr - Abschluss und Themenpräsentation <br>
+21 Uhr - Spielen, Spass haben, Kontakte knüpfen <br>
 
 
 ## Ort
@@ -22,11 +26,8 @@ Sunderweg 1<br>
 <br>
 <a href="http://www.kuenstlerhaus-dortmund.de/" target="_blank">www.kuenstlerhaus-dortmund.de</a>
 
-## Ablauf
-11 Uhr - Kennen lernen und Themenauswahl <br>
-12 Uhr - Verkündung des Themas und Start des Jams <br>
-20 Uhr - Abschluss und Themenpräsentation <br>
-21 Uhr - Spielen, Spass haben, Kontakte knüpfen <br>
+
+
 
 
 ## Anmeldung
