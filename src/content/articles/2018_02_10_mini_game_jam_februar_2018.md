@@ -12,10 +12,10 @@ draft: false
 ---
 
 
-<img alt="Menschen machen Spiele" src="/img/articles/februar_2018.png" width="800">
-<img alt="Menschen machen Spiele" src="/img/articles/februar_2018_2.png" width="800">
-<img alt="Menschen machen Spiele" src="/img/articles/februar_2018_4.png" width="800">
-<img alt="Themen" src="/img/articles/februar_2018_3.png" width="800">
+<img alt="Menschen machen Spiele" src="/img/articles/februar_2018.jpg" width="800">
+<img alt="Menschen machen Spiele" src="/img/articles/februar_2018_2.jpg" width="800">
+<img alt="Menschen machen Spiele" src="/img/articles/februar_2018_4.jpg" width="800">
+<img alt="Themen" src="/img/articles/februar_2018_3.jpg" width="800">
 <img alt="Spiel" src="/img/articles/februar_2018_vid.gif" width="800">
 
 Dritter Mini Game Jam. Diesmal in den Ausstellungsräumen des Künstlerhauses. 
