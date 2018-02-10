@@ -15,7 +15,7 @@ Die Themen waren: Familie, Oldschool, Grenzen überschreiten, Two Button Control
 
 <br>
 
-![alt text](/img/articles/juni_2017.png)
+![Game Collage](/img/articles/juni_2017.png)
 
 <br>
 
