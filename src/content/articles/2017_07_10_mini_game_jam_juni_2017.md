@@ -1,6 +1,6 @@
 ---
 layout: article.html
-title: Mini Game Jam Juni 2007
+title: Mini Game Jam Juni 2017
 id: mini_game_jam_juni_2017
 author: Moritz Rebbert
 date: 2017-06-10

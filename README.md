@@ -24,6 +24,15 @@ To check the deployment locally run:
 ```
 This will build a minified version of the page to the build/ folder.
 
+# Folder
+ * build - generated page result (@ .gitignore)
+ * dev - live server temp folder
+ * js - build scripts
+ * print - print flyer projected (independent from website)
+ * src - page source
+ * src/assets/img - includes also some social media header images
+ * stuff - some pdf flyer (TODO: move ??)
+
 # TODO
  * Create sprite from people.png to replace peopX.png files.
  * Blog
