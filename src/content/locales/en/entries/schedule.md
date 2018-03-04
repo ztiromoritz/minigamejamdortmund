@@ -8,12 +8,9 @@ locale: en
 ---
 ## Schedule 
 
-The game jam in Dortmund is a relaxed one-day local jam. With 8 to 10 hours we are below the usual 48h-jam, to we call it a "mini game jam" inspired by the  
-<a href="http://berlinminijam.de">Berlin Mini Game Jam</a>.
+The game jam in Dortmund is a relaxed one-day local jam. With 8 to 10 hours we are below the usual 48h-jam, to we call it a "mini game jam" inspired by the  <a href="http://berlinminijam.de">Berlin Mini Game Jam</a>.
 
-We provide time, space and power supplies to work and play games. Usually the games will be created completely from scratch during on jam. 
-But you are free to work on long running game projects during the jam as well. We will do a small presentation round to finish the jam.
-There will be no voting, rankung, jury or any other competition.
+We provide time, space and power supplies to work and play games. Usually the games will be created completely from scratch during on jam. But you are free to work on long running game projects during the jam as well. We will do a small presentation round to finish the jam. There will be no voting, rankung, jury or any other competition.
 
 <br>
 11:00 - Get to know eachother an theme selection <br>
