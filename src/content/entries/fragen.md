@@ -8,7 +8,7 @@ footerImageAlt: Schmuckbild Malen und Musik
 ## Wer kann mitmachen?
 
 Der Game Jam richtet sich ausdrücklich nicht nur an ProgrammiererInnen und Menschen, die professionell Spiele entwickeln. Auch alle Neugierigen, die noch nie an einem Computerspiel gearbeitet haben, sind herzlich willkommen. Ein Computerspiel besteht
-neben dem Programmcode auch aus Bilder, Musik, Tönen und Texten. Jede und jeder mit Interesse und Lust an Computerspieleentwicklung, kann etwas beisteuern und weitergeben.
+neben dem Programmcode auch aus Bilder, Musik, Tönen und Texten. Alle, die Interesse und Lust an Computerspieleentwicklung haben, können etwas beisteuern und weitergeben.
 *Allerdings ist die Teilnahme fürs erste nur für Menschen ab 18 Jahren.*
 
 

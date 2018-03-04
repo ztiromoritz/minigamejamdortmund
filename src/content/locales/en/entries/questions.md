@@ -1,27 +1,26 @@
 ---
-title: Fragen
-id: fragen
+title: FAQ
+id: faq
 prio: 3
 footerImage: /img/peop3.png
-footerImageAlt: Schmuckbild Malen und Musik
+footerImageAlt: drawing and music
+locale: en
 ---
-## Wer kann mitmachen?
 
-Der Game Jam richtet sich ausdrücklich nicht nur an ProgrammiererInnen und Menschen, die professionell Spiele entwickeln. Auch alle Neugierigen, die noch nie an einem Computerspiel gearbeitet haben, sind herzlich willkommen. Ein Computerspiel besteht
-neben dem Programmcode auch aus Bilder, Musik, Tönen und Texten. Jede und jeder mit Interesse und Lust an Computerspieleentwicklung, kann etwas beisteuern und weitergeben.
-*Allerdings ist die Teilnahme fürs erste nur für Menschen ab 18 Jahren.*
+## Who can participate?
+The mini game jam is explicitly not for tech or game industry people only. Every other curious beeing is invited to participate.
+A wide range of abilities can be used during the jam like creating pictures, music, sounds, text and source code. Everybody can give something, 
+everybody can learn something new during the jam. *There is only one barrier, that at the moment you have to be at least 18 years old.*
 
+## What does it cost?
+The mini game jam is a non commercial event. There is no entrance fee. All participants are asked to support the expenses with a donation. 
+But it's intended to have no financial barrier for your participation. More information will be provided during the jam.
 
-## Was kostet das?
+## What tools do i need?
+Usually the participants bring their own devices, instruments and sketchbooks. 
+There is a small amount of lendable hardware, please send a message beforehand, if you need anything.
+At the location we have tables, chairs, power supply, wi-fi and a beamer. (You are responsible for the safety of all you private belongings. 
+No one can take any liablity for your hardware except yourself.) 
 
-Der Mini Game Jam ist eine nicht kommerzielle Veranstaltung. Es werden keine Teilnahmegebühren erhoben. Alle Beteiligten werden eingeladen sich an den entstehenden Unkosten mit einer Spenden zu beteiligen. Aber grundsätzlich soll für niemanden eine finanzielle
-Hürde entstehen. Weiter Infos dazu gibt es vor Ort beim Start des Jams.
-
-
-## Welche Materialien und Geräte werden benötigt?
-
-Die Teilnehmenden bringen in der Regel ihre eigenen Geräte, Laptops, Tablets, Instrumente und Skizzenblöcke zum Jam mit. Ein kleiner Fundus an einfachen Leihgeräten, die für den Verlauf des Jams genutzt werden können, stehen auf Anfrage gerne zur Verfügung.
-Vorhanden sind Steckdosen, Tische, Stühle und eine Internetverbindung. Außerdem ein Beamer für die Abschlusspräsentation.
-*(Auf die privat mitgebrachten Dinge, müssen alle für sich aufpassen. Es kann kein Haftung übernommen werden.)*
-
-Bestimmte Software oder Techniken werden nicht vorgegeben. Hier gibt es eine Liste von Programmen, die gut für Game Jams geeignet sind: [http://ludumdare.com/compo/tools/](http://ludumdare.com/compo/tools/)
+We don't restrict the use to special tools or hardware. If you need some inspirations for software that are use full during a 
+jam: [http://ludumdare.com/compo/tools/](http://ludumdare.com/compo/tools/)
