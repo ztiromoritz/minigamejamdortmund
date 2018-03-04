@@ -17,8 +17,8 @@
         <entry file="file://$PROJECT_DIR$/src/content/articles/2018_02_10_mini_game_jam_februar_2018.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="304">
-                <caret line="19" column="74" lean-forward="false" selection-start-line="19" selection-start-column="74" selection-end-line="19" selection-end-column="74" />
+              <first_editor relative-caret-position="96">
+                <caret line="6" column="34" lean-forward="true" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -386,12 +386,12 @@
       <workItem from="1507915359374" duration="583000" />
       <workItem from="1517691839774" duration="1799000" />
       <workItem from="1518264835845" duration="5372000" />
-      <workItem from="1520089180739" duration="3968000" />
+      <workItem from="1520089180739" duration="4570000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12891000" />
+    <option name="totallyTimeSpent" value="13493000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="55" y="23" width="1560" height="982" extended-state="0" />
@@ -876,8 +876,8 @@
     <entry file="file://$PROJECT_DIR$/src/content/articles/2018_02_10_mini_game_jam_februar_2018.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="304">
-            <caret line="19" column="74" lean-forward="false" selection-start-line="19" selection-start-column="74" selection-end-line="19" selection-end-column="74" />
+          <first_editor relative-caret-position="96">
+            <caret line="6" column="34" lean-forward="true" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
             <folding />
           </first_editor>
           <second_editor />

@@ -4,7 +4,7 @@ title: Mini Game Jam Februar 2018
 id: mini_game_jam_februar_2018
 author: Moritz Rebbert
 date: 2017-02-10
-description: Dritter Mini Game Jams im Künstlerhaus.
+description: Dritter Mini Game Jam im Künstlerhaus.
 signature:
 tweet:
 image: img/articles/februar_2018.png
