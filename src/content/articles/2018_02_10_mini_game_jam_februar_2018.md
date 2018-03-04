@@ -17,7 +17,7 @@ draft: false
 <img alt="Menschen machen Spiele" src="/img/articles/februar_2018_4.jpg" width="800">
 <img alt="Themen" src="/img/articles/februar_2018_3.jpg" width="800">
 <img alt="Das Spiel Star Feet Academy in Aktion" src="/img/articles/februar_2018_vid.gif" width="800">
-<img alt="Cross of Cards" src="/img/articles/februar_2018_CrossOfCards.png" width="800">
+<img alt="Cross of Cards" src="/img/articles/februar_2018_CrossOfCards.jpg" width="800">
 <img alt="Sherry Bobbins" src="/img/articles/februar_2018_jerry.gif" width="800">
 
 
