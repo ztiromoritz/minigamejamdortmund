@@ -12,7 +12,7 @@ draft: false
 ---
 
 
-<img alt="Menschen machen Spiele" src="/img/articles/februar_2018.jpg" width="800">
+<img alt="Menschen machen Spiele" src="/img/articles/februar_2018_0.jpg" width="800">
 <img alt="Menschen machen Spiele" src="/img/articles/februar_2018_2.jpg" width="800">
 <img alt="Menschen machen Spiele" src="/img/articles/februar_2018_4.jpg" width="800">
 <img alt="Themen" src="/img/articles/februar_2018_3.jpg" width="800">

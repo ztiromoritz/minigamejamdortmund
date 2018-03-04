@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36ae36e0-8929-4eb8-a85b-3a5c1fb2660b" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/assets/img/articles/februar_2018_CrossOfCards.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/content/locales/en/entries/gameJam.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/content/locales/en/entries/questions.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/content/locales/en/entries/schedule.md" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/articles/februar_2018.JPG" afterPath="$PROJECT_DIR$/src/assets/img/articles/februar_2018_0.jpg" />
       <change beforePath="$PROJECT_DIR$/src/content/articles/2018_02_10_mini_game_jam_februar_2018.md" afterPath="$PROJECT_DIR$/src/content/articles/2018_02_10_mini_game_jam_februar_2018.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,8 +19,8 @@
         <entry file="file://$PROJECT_DIR$/src/content/articles/2018_02_10_mini_game_jam_februar_2018.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="320">
-                <caret line="20" column="25" lean-forward="false" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="25" />
+              <first_editor relative-caret-position="224">
+                <caret line="14" column="67" lean-forward="false" selection-start-line="14" selection-start-column="67" selection-end-line="14" selection-end-column="67" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -391,12 +388,12 @@
       <workItem from="1507915359374" duration="583000" />
       <workItem from="1517691839774" duration="1799000" />
       <workItem from="1518264835845" duration="5372000" />
-      <workItem from="1520089180739" duration="2695000" />
+      <workItem from="1520089180739" duration="3465000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11618000" />
+    <option name="totallyTimeSpent" value="12388000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="55" y="23" width="1560" height="982" extended-state="0" />
@@ -881,8 +878,8 @@
     <entry file="file://$PROJECT_DIR$/src/content/articles/2018_02_10_mini_game_jam_februar_2018.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="320">
-            <caret line="20" column="25" lean-forward="false" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="25" />
+          <first_editor relative-caret-position="224">
+            <caret line="14" column="67" lean-forward="false" selection-start-line="14" selection-start-column="67" selection-end-line="14" selection-end-column="67" />
             <folding />
           </first_editor>
           <second_editor />
