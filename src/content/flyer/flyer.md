@@ -2,7 +2,7 @@
 layout: flyer.html
 title: MINI GAME JAM
 location: Im Künstlerhaus in Dortmund
-dateLine: 12. Mai 2018 
+dateLine: 04. August 2018 
 timeLine: 11 bis 22 Uhr
 addressLine: 'Sunderweg 1, Dortmund'
 link: 'https://game-jam-do.de'

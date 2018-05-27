@@ -164,7 +164,9 @@ ms = ms.use(fixCollectionsOnRerun()).metadata({
             sortBy: 'prio'
         },
         articles: {
-            pattern: 'articles/*.md'
+            pattern: 'articles/*.md',
+            sortBy: 'date',
+            reverse: true
         }
     })))
     //.use(listFiles())
