@@ -9,7 +9,7 @@ classes: title_section
 	<h1>MINI GAME JAM</h1>
 	<h2>Im Künstlerhaus in Dortmund</h2>
 	<h2>Nächster Termin:</h2>
-	<h2>Am 04. August 2018 </h2>
+	<h2>Am 10. November 2018 </h2>
 	<br>
 	<img src="/img/people.png" id="people" alt="Schmuckbild Menschen und Maschinen machen Spiele">
 	<br>

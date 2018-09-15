@@ -9,7 +9,7 @@ locale: en
 <div class="flyer">
 	<h1>MINI GAME JAM</h1>
 	<h2>At the "Künstlerhaus" in Dortmund</h2>
-	<h2>August 4th 2018</h2>
+	<h2>November 10th 2018</h2>
 	<br>
 	<img src="/img/people.png" id="people" alt="Schmuckbild Menschen und Maschinen machen Spiele">
 	<br>
