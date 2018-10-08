@@ -14,7 +14,8 @@ locale: en
 	<img src="/img/people.png" id="people" alt="Schmuckbild Menschen und Maschinen machen Spiele">
 	<br>
 	<br>
-	<br>
+	<p><b>More dates:</b></p>
+    <p>09.02.19 // 11.05.19 // 10.08.19 // 09.11.19</p>
 	<br>
 	<br>
 	<h1>↓</h1>
