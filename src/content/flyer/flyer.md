@@ -2,7 +2,7 @@
 layout: flyer.html
 title: MINI GAME JAM
 location: Im Künstlerhaus in Dortmund
-dateLine: 11 November 2019 
+dateLine: 08. Februar 2020
 timeLine: 11 bis 22 Uhr
 addressLine: 'Sunderweg 1, Dortmund'
 link: 'https://game-jam-do.de'
